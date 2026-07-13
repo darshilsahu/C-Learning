@@ -4,7 +4,7 @@ int main()
     char character;
     printf("Enter Your Character: ");
     scanf("%c", &character);
-    //We Use ASCII Keys
+    // We Use ASCII Keys
     if (character >= 97 && character <= 122)
     {
         printf("Lowercase");

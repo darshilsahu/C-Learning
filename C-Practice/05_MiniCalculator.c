@@ -32,7 +32,8 @@ int main()
     {
         printf("%d %c %d = %d", num1, operator, num2, num1 * num2);
     }
-    else if(num2==0){
+    else if (num2 == 0)
+    {
         printf("Division with Zero Not Possible");
     }
     else if (operator == '/')
