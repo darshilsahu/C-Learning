@@ -14,7 +14,7 @@ The computer generates a random number between **1 and 100**, and the player has
 - ⬆️ Hint if the secret number is higher
 - ⬇️ Hint if the secret number is lower
 - 🏆 Displays the number of guesses after winning
-- ❌ Shows the correct number if the player loses
+- 💡 Shows the correct number if the player loses
 
 ---
 
