@@ -11,7 +11,7 @@ int main()
     randnum = (rand() % 100) + 1;
     for (int i = 1; i < 11; i++)
     {
-        printf("Attempt %d of 10\n",i);
+        printf("Attempt %d of 10\n", i);
         printf("Enter the Number: ");
         guess++;
         scanf("%d", &num);
@@ -32,6 +32,6 @@ int main()
     }
     printf("OUT OF TRIES\n");
     printf("GAME OVER\n");
-    printf("THE CORRECT NUMBER IS: %d ",randnum);
+    printf("THE CORRECT NUMBER IS: %d ", randnum);
     return 0;
 }
