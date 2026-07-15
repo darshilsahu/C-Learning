@@ -10,6 +10,7 @@ This repository documents my journey of learning C programming from scratch.
 - ✅ Operators
 - ✅ Conditionals
 - ✅ Loops
+- ✅ Functions
 
 ## Folder Structure
 
@@ -32,7 +33,7 @@ Projects/
 - [x] Basics
 - [x] Conditionals
 - [x] Loops
-- [ ] Functions
+- [x] Functions
 - [ ] Arrays
 - [ ] Strings
 - [ ] Pointers
