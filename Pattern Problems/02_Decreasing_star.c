@@ -1,27 +1,28 @@
 /*TO PRINT FOLLOWING PATTERN
 _____________________
-*
-**
-***
+***** from nth line n stars to 1 star
 ****
-***** and so on till nth line
+***
+**
+*
 _______________________`
 */
 #include <stdio.h>
 void starpattern(int n);
 void starpattern(int n)
 {
-    if (n == 1)
-    {
-        printf("*");
-        return;
-    }
-    starpattern(n - 1);
-    printf("\n");
     for (int i = 0; i < n; i++)
     {
         printf("*");
     }
+    printf("\n");
+
+    if (n == 1)
+    {
+        // printf("*");
+        return;
+    }
+    starpattern(n - 1);
 }
 
 int main()
