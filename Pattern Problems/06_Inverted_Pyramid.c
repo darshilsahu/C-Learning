@@ -32,7 +32,7 @@ void pyramid(int n){
     }
     printf("\n");
     if(n==1){
-        printf("%*s*",lines-1,"");
+        //printf("%*s*",lines-1,"");
         return;
     }
     
