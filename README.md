@@ -11,6 +11,7 @@ This repository documents my journey of learning C programming from scratch.
 - ✅ Conditionals
 - ✅ Loops
 - ✅ Functions
+- ✅ Pointers
 
 ## Folder Structure
 
@@ -36,7 +37,7 @@ Projects/
 - [x] Functions
 - [ ] Arrays
 - [ ] Strings
-- [ ] Pointers
+- [x] Pointers
 - [ ] Structures
 - [ ] File Handling
 - [ ] Dynamic Memory Allocation
