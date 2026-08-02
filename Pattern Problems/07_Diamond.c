@@ -1,6 +1,6 @@
 /*
 ____________________________
-#To Print following Diamond Pattern
+#To Print following upperpyramid Pattern
      *
     ***
    *****
@@ -16,13 +16,13 @@ ____________________________
 */
 #include <stdio.h>
 int lines;
-void diamond(int n);
-void diamond(int n){
+void upperpyramid(int n);
+void upperpyramid(int n){
     if(n==1){
         printf("%*s*",lines,"");
         return;
     }
-    diamond(n-2);
+    upperpyramid(n-2);
     printf("\n");
     for (int i = 1; i<=n; i++)
     {
@@ -36,34 +36,9 @@ void diamond(int n){
         }
     }
 }
-void invertdia(int n);
-void invertdia(int n){
-    for (int i = 1; i <=n; i++)
 
-    {
-        int f;
-        f=(n+1)/2;
-        if(i==1){
-            printf("%*s*",lines-f,"");
-        }
-        
-        else{
-            printf("*");
-        }
-        
-
-        
-    }
-    printf("\n");
-    if(n==1){
-        printf("%*s*",lines-1,"");
-        return;
-    }
-    
-    invertdia(n-2);  
-}
-void pyramid(int n);
-void pyramid(int n){
+void lowerpyramid(int n);
+void lowerpyramid(int n){
     for (int i = 1; i <=n; i++)
 
     {
@@ -86,7 +61,7 @@ void pyramid(int n){
         return;
     }
     
-    pyramid(n-2);
+    lowerpyramid(n-2);
     
     
     
@@ -103,9 +78,9 @@ int main(){
     }
     else
     {
-        diamond(2*lines-1);
+        upperpyramid(2*lines-1);
         printf("\n");
-        pyramid(2*lines-1-2);
+        lowerpyramid(2*lines-1-2);
     }
 
     
