@@ -13,25 +13,23 @@ ____________________________
 */
 #include <stdio.h>
 int lines;
-int factorial(int x);
-int factorial(int x){
-    if(x==0 || x==1){
+// int factorial(int x);
+// int factorial(int x){
+//     if(x==0 || x==1){
+//         return 1;
+//     }
+//     else{
+//         return factorial(x-1)*x;
+//     }
+    
+// }
+
+int binomial(int n,int r);
+int binomial(int n,int r){
+    if (r == 0 || r == n){
         return 1;
     }
-    else{
-        return factorial(x-1)*x;
-    }
-    
-}
-
-void binomial(int n,int r);
-void binomial(int n,int r){
-    int value=factorial(n)/(factorial(n-r)*factorial(r));
-    
-    printf("%d ",value);
-    return;
-
-
+    return binomial(n,r-1)*(n-r+1)/r;
 }
 void pascal(int n);
 void pascal(int n){
@@ -45,7 +43,8 @@ void pascal(int n){
     
     for (int i = 0; i <n; i++)
     {
-        binomial(n-1,i);
+        printf("%d ",binomial(n-1,i));
+        
         
         
     }

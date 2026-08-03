@@ -1,13 +1,3 @@
-/*
-____________________________
-#To Print following Pattern
-     *
-    ***
-   *****
-  *******
- ********* ....till nth lines
- ____________________________
-*/
 #include <stdio.h>
 
 int lines;
