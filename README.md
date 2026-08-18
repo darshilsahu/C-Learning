@@ -19,6 +19,7 @@ This repository documents my journey of learning C programming from scratch.
 ```
 C-Basics/
 C-Practice/
+Pattern Problems/
 Projects/
 ```
 
