@@ -5,34 +5,35 @@ void reversearray(int arr[], int size);
 void reversearray(int arr[], int size)
 {
     int temp;
-    if(size%2==0){
-        
-        for (int i = 0; i < (size/2)-1; i++)
+    if (size % 2 == 0)
+    {
+
+        for (int i = 0; i < (size / 2); i++)
         {
-            temp=arr[size-1-i];
-            arr[size-1-i]=arr[i];
-            arr[i]=temp;
+            temp = arr[size - 1 - i];
+            arr[size - 1 - i] = arr[i];
+            arr[i] = temp;
         }
-    }   
-    else{
-        for (int i = 0; i < (size+1/2)-1; i++)
+    }
+    else
+    {
+        for (int i = 0; i < ((size + 1) / 2) - 1; i++)
         {
-            temp=arr[size-1-i];
-            arr[size-1-i]=arr[i];
-            arr[i]=temp;
+            temp = arr[size - 1 - i];
+            arr[size - 1 - i] = arr[i];
+            arr[i] = temp;
         }
     }
     for (int j = 0; j < size; j++)
     {
-        printf("%d\n",arr[j]);
+        printf("%d\n", arr[j]);
     }
-    
 }
 
 int main()
 {
     int num;
-    printf("Enter Number of Arrays to Store: ");
+    printf("Enter Number of Elements in Array: ");
     scanf("%d", &num);
     if (num <= 0)
     {
