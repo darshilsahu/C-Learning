@@ -4,10 +4,29 @@
 void reversearray(int arr[], int size);
 void reversearray(int arr[], int size)
 {
-    for (int i = size - 1; i >= 0; i--)
-    {
-        printf("%d\n", arr[i]);
+    int temp;
+    if(size%2==0){
+        
+        for (int i = 0; i < (size/2)-1; i++)
+        {
+            temp=arr[size-1-i];
+            arr[size-1-i]=arr[i];
+            arr[i]=temp;
+        }
+    }   
+    else{
+        for (int i = 0; i < (size+1/2)-1; i++)
+        {
+            temp=arr[size-1-i];
+            arr[size-1-i]=arr[i];
+            arr[i]=temp;
+        }
     }
+    for (int j = 0; j < size; j++)
+    {
+        printf("%d\n",arr[j]);
+    }
+    
 }
 
 int main()
