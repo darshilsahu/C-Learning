@@ -19,13 +19,10 @@ int main()
         }
     }
     
-    for (int j = 0; j < 10; j++)
+    for (int i = 0; i < 10; i++)
     {
-        for (int i = 0; i < num1; i++)
-        {
-            printf("%d ", arr[i][j]);
-        }
-        printf("\n");
+        /* code */
     }
+    
     return 0;
 }
